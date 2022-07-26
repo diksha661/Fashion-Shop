@@ -10,3 +10,9 @@ Fashion-Shop (E-Commerce) website for providing the best online shopping experie
 
 
 ![2022-07-26 (10)](https://user-images.githubusercontent.com/104613502/181061178-e5501f52-7825-4162-a1ac-b324ebdb9236.png)
+
+
+
+
+
+![2022-07-26 (14)](https://user-images.githubusercontent.com/104613502/181061437-0d8bf313-45f0-4ad0-afa2-c4907a4b5eea.png)
