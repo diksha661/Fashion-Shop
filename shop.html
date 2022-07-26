@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shop</title>
+
+
+        <!--link bootstrap cdn and J-query, Javascript file to html file-->
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha348-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+        <link rel="stylesheet" href="style.css">
+
+<!--Shop images same Height-->
+
+<style>
+         .product img {
+          width: 100;
+          height: auto;
+          box-sizing: border-box;
+          object-fit: cover;
+         }
+         
+
+
+/*Change the font Color of the section inspect*/
+
+         #featured>div.row.mx-auto.container>nav>ul>li.page-item.active>a {
+          background-color: black;
+         }
+
+/* apply hover effect when hover one of the section change the background color*/
+
+
+         #featured>div.row.mx-auto.container>nav>ul>li:nth-child(n):hover>a{
+          background-color: coral;
+          color: white;
+         }
+       
+/* Change the overall text color*/         
+         .pagination a {
+          color: black;
+         }
+
+</style>
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha348-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="https://kit.fontawesome.com/09f99f5f53.js" crossorigin="anonymous"></script>
+
+
+
+
+</head>
+<body>
+<!--NAVIGATION fixed navigation-bar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 fixed-top">
+        <div class="container">    <!--adding extra space-->
+          <img src="C:\Users\HP\Desktop\Website\W-images\logo.jpg" class="logo" width="150"></a> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" class="navbar-toggler-icon"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>          <!--click on home go to index.html page-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Shop</a>               <!--Create a active to highlight Shop when we are on that page-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+
+              <li class="nav-item">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-comment" aria-hidden="true"></i>
+                </li>
+              
+              
+          </div>
+        </div>
+      </nav>
+
+<!--featured section-->
+      <section id="featured" class="my-5 py-5">
+        <div class="container  mt-5 py-5">
+            <h2 class="font-weight-bold">Our Featured</h2>
+    
+            <!--to place line below text-->
+            <hr>
+            <p>Here You can check out our new products with fair price on Fashion Shop.</p>
+        </div>
+
+        <!--make this first image clickable-->
+
+
+            <div class="row mx-auto container">  <!--remove slider & spaces from boundary-->
+               <div onclick="window.location.href='sproduct.html';" class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+                 <img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\color1.webp" alt="">
+                 <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Casual Cotton shirt</h5>
+            <h4 class="p-price">$72.00</h4>
+            <button class="buy-btn">Buy Now</button>
+    </div>
+    
+    
+        <div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+          <img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop2.webp" alt="">
+      <div class="star">
+         <i class="fa fa-star" aria-hidden="true"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+    </div>
+     <h5 class="p-name">Chronograph Watch</h5>
+     <h4 class="p-price">$67</h4>
+     <button class="buy-btn">Buy Now</button>
+    </div>
+    
+    
+        <div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+          <img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop3.webp" alt="">
+      <div class="star">
+         <i class="fa fa-star" aria-hidden="true"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+    </div>
+     <h5 class="p-name">Men Running Shoes</h5>
+     <h4 class="p-price">$78</h4>
+     <button class="buy-btn">Buy Now</button>
+    </div>
+    
+    
+        <div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+          <img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop4.webp" alt="">
+      <div class="star">
+         <i class="fa fa-star" aria-hidden="true"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+    </div>
+     <h5 class="p-name">Trolly Bag</h5>
+     <h4 class="p-price">$90</h4>
+     <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+      <img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop5.webp" alt="">
+      <div class="star">
+         <i class="fa fa-star" aria-hidden="true"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+ </div>
+ <h5 class="p-name">Armani Exchange</h5>
+ <h4 class="p-price">$92.00</h4>
+ <button class="buy-btn">Buy Now</button>
+</div>
+
+
+<div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+<img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop6.webp" alt="">
+<div class="star">
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h5 class="p-name">Mivi</h5>
+<h4 class="p-price">$55</h4>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+
+<div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+<img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop7.webp" alt="">
+<div class="star">
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h5 class="p-name">Men's T-shirt</h5>
+<h4 class="p-price">$98</h4>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+
+<div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+<img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop8.webp" alt="">
+<div class="star">
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h5 class="p-name">Smart Watch</h5>
+<h4 class="p-price">$56</h4>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+
+
+<div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+  <img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop9.webp" alt="">
+  <div class="star">
+     <i class="fa fa-star" aria-hidden="true"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+</div>
+<h5 class="p-name">Two Fold Wallet</h5>
+<h4 class="p-price">$45</h4>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+
+<div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+<img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop10.webp" alt="">
+<div class="star">
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h5 class="p-name">Air Dops</h5>
+<h4 class="p-price">$98</h4>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+
+<div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+<img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop11.webp" alt="">
+<div class="star">
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h5 class="p-name">Carry Bag</h5>
+<h4 class="p-price">$40</h4>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+
+<div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+<img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop12.webp" alt="">
+<div class="star">
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h5 class="p-name">Women Analogue Watch</h5>
+<h4 class="p-price">$89</h4>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+
+<div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+  <img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop13.webp" alt="">
+  <div class="star">
+     <i class="fa fa-star" aria-hidden="true"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+</div>
+<h5 class="p-name">Bag</h5>
+<h4 class="p-price">$29</h4>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+
+<div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+<img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop14.webp" alt="">
+<div class="star">
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h5 class="p-name">Earings</h5>
+<h4 class="p-price">$45</h4>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+
+<div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+<img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop15.jpg" alt="">
+<div class="star">
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h5 class="p-name"> Smart Watch</h5>
+<h4 class="p-price">$77</h4>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+
+<div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+<img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop16.webp" alt="">
+<div class="star">
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h5 class="p-name">Graphic Backpack</h5>
+<h4 class="p-price">$80</h4>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+
+
+<div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+  <img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop17.webp" alt="">
+  <div class="star">
+     <i class="fa fa-star" aria-hidden="true"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+</div>
+<h5 class="p-name">Clarkin Sneakers</h5>
+<h4 class="p-price">$70</h4>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+
+<div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+<img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop18.webp" alt="">
+<div class="star">
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h5 class="p-name">Formal Shoes</h5>
+<h4 class="p-price">$89</h4>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+
+<div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+<img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop19.webp" alt="">
+<div class="star">
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h5 class="p-name">Cotton Bedsheet</h5>
+<h4 class="p-price">$90</h4>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+
+<div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+<img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\shop20.webp" alt="">
+<div class="star">
+<i class="fa fa-star" aria-hidden="true"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h5 class="p-name">Bedsheet</h5>
+<h4 class="p-price">$85</h4>
+<button class="buy-btn">Buy Now</button>
+</div>
+
+
+<!--Using Bootstrap Component To apply Pagination-->
+
+<nav aria-label="...">
+  <ul class="pagination mt-5">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item " aria-current="page">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+
+
+    </div>
+    </section>
+
+
+      <!--footer-->
+<footer class="mt-5 py-5">
+    <div class="row container mx-auto pt-5">                        <!--remove slider-->
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+            <img src="C:\Users\HP\Desktop\Website\W-images\logo.jpg" class="logo" width="160"></a> 
+            <p class="pt-3"> Adidas  Arrow  Fila  Online Shopping  Nike  Pepe Jeans  Puma  United Colors of Benetton  Fastrack  Shorts  Bags  </p>
+        
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+            <h5 class="pb-2">Featured</h5>
+            <ul class="text-uppercase list-unstyled">
+            
+                <li><a href="#">men</a></li>
+                <li><a href="#">women</a></li>
+                <li><a href="#">boys</a></li>
+                <li><a href="#">girls</a></li>
+                <li><a href="#">new arrivals</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">clothes</a></li>
+    
+            </ul>   
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+            <h5 class="pb-2">Contact Us</h5>
+            <div>
+                <h6 class="text-uppercase">Address</h6>
+                <p>123 STREET 1,RAJASTHAN</p>
+            </div> 
+            
+            <div>
+                <h6 class="text-uppercase">Phone</h6>
+                <p>(123) 456-7890</p>
+             </div>
+             
+             <div>
+                <h6 class="text-uppercase">Email</h6>
+                <p>MAIL@GMAIL>COM</p>
+             </div>
+    
+        </div>
+    
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+            <h5 class="pb-2">Instagram </h5>
+            <div class="row">
+                <img class="img-fluid w-25 h-100 m-2" src="C:\Users\HP\Desktop\Website\W-images\1.jpg"  alt="">
+                <img class="img-fluid w-25 h-100 m-2" src="C:\Users\HP\Desktop\Website\W-images\2.jpg"  alt="">
+                <img class="img-fluid w-25 h-100 m-2" src="C:\Users\HP\Desktop\Website\W-images\3.jpg"  alt="">
+                <img class="img-fluid w-25 h-100 m-2" src="C:\Users\HP\Desktop\Website\W-images\4.jpg"  alt="">
+                <img class="img-fluid w-25 h-100 m-2" src="C:\Users\HP\Desktop\Website\W-images\5.jpg"  alt="">
+        </div>
+    </div>
+    </div>
+    
+    <div class="copyright mt-5">
+        <div class="row container mx-auto">
+                    <div class="col-lg-3 col-md-6 col-12 mb-4">
+                       <img src="C:\Users\HP\Desktop\Website\W-images\payment.png" alt="">
+                    </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap">
+                <p>fashion shop @2022. All Rights Reserved</p>
+                </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-2">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+             </div>
+        </div>
+    </div>    
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
+   
